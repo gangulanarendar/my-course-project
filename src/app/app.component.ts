@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  selectedOption:string='receipe';
+
+
+  onFeatureSelected(event)
+  {
+    console.log('onFeatureSelected :',event);
+    this.selectedOption=event;
+
+  }
 }
